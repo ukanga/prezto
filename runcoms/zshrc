@@ -11,3 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+alias -s py=vim
+alias -s conf=vim
+alias -s js=vim
+alias -s php=vim
+alias svim="sudo vim"
+
+export PIP_DOWNLOAD_CACHE=~/.pip_downloads
