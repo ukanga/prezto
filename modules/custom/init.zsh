@@ -54,4 +54,5 @@ function _local_django_settings_module()
 
 if (( $+commands[virtualenvwrapper_lazy.sh] )); then
     add-zsh-hook chpwd _workon_cwd
+    _workon_cwd
 fi
