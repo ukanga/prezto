@@ -56,3 +56,7 @@ if (( $+commands[virtualenvwrapper_lazy.sh] )); then
     add-zsh-hook chpwd _workon_cwd
     _workon_cwd
 fi
+
+if (( $+commands[hub] )); then
+    alias git=$(which hub)
+fi
