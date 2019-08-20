@@ -11,3 +11,30 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+export EDITOR='nvim'
+export VISUAL='nvim'
+
+# polybar wifi signal
+export POLYBAR_RAMP_0="%{F${color8}}━━━━━━━%{F-}"
+export POLYBAR_RAMP_1="━%{F${color8}}━━━━━━%{F-}"
+export POLYBAR_RAMP_2="━━%{F${color8}}━━━━━%{F-}"
+export POLYBAR_RAMP_3="━━━%{F${color8}}━━━━%{F-}"
+export POLYBAR_RAMP_4="━━━━%{F${color8}}━━━%{F-}"
+export POLYBAR_RAMP_5="━━━━━%{F${color8}}━━%{F-}"
+export POLYBAR_RAMP_6="━━━━━━%{F${color8}}━%{F-}"
+export POLYBAR_RAMP_7="━━━━━━━"
+
+export MONITOR=$(xrandr --listactivemonitors | tail -n -1 | grep -oE '[^ ]+$')
+# export MONITOR=$(polybar -m|tail -1|sed -e 's/:.*$//g')
+#
+# Vault
+export VAULT_ADDR=https://vault.onalabs.org
+
+alias vim=nvim
+alias git=hub
+
+path=(
+  ~/.local/{bin,sbin}
+  $path
+)
