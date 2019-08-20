@@ -35,6 +35,10 @@ zstyle ':prezto:load' pmodule \
   'editor' \
   'history' \
   'history-substring-search' \
+  'python' \
+  'node' \
+  'ssh' \
+  'gpg' \
   'directory' \
   'spectrum' \
   'utility' \
@@ -133,10 +137,10 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Auto switch the Python virtualenv on directory change.
-# zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
+zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
 
 # Automatically initialize virtualenvwrapper if pre-requisites are met.
-# zstyle ':prezto:module:python:virtualenv' initialize 'yes'
+zstyle ':prezto:module:python:virtualenv' initialize 'yes'
 
 #
 # Ruby
@@ -161,6 +165,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 
 # Set the SSH identities to load into the agent.
 # zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+zstyle ':prezto:module:ssh:load' identities 'id_ed25519' 'ona-production' 'ona-staging'
 
 #
 # Syntax Highlighting
