@@ -68,4 +68,4 @@ fi
 #  exec startx
 #fi
 
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/go/bin:$HOME/.cargo/bin:$PATH"
