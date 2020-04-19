@@ -25,7 +25,7 @@ export POLYBAR_RAMP_5="━━━━━%{F${color8}}━━%{F-}"
 export POLYBAR_RAMP_6="━━━━━━%{F${color8}}━%{F-}"
 export POLYBAR_RAMP_7="━━━━━━━"
 
-export MONITOR=$(xrandr --listactivemonitors | tail -n -1 | grep -oE '[^ ]+$')
+[[ `which xrandr &>/dev/null && $?` == 0 ]] && export MONITOR=$(xrandr --listactivemonitors | tail -n -1 | grep -oE '[^ ]+$')
 # export MONITOR=$(polybar -m|tail -1|sed -e 's/:.*$//g')
 #
 # Vault
