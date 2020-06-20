@@ -69,3 +69,4 @@ fi
 #fi
 
 export PATH="$HOME/go/bin:$HOME/.cargo/bin:$PATH"
+export ANSIBLE_STRATEGY_PLUGINS="/home/${USER}/.pyenv/versions/playbooks/lib/python3.8/site-packages/ansible_mitogen/plugins/strategy"
