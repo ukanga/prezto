@@ -38,6 +38,7 @@ zstyle ':prezto:load' pmodule \
   'python' \
   'node' \
   'ssh' \
+  'git' \
   'gpg' \
   'directory' \
   'spectrum' \
@@ -113,7 +114,7 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 #
 
 # Set the Pacman frontend.
-zstyle ':prezto:module:pacman' frontend 'pacaur'
+zstyle ':prezto:module:pacman' frontend 'yay'
 
 #
 # Prompt
@@ -197,7 +198,7 @@ zstyle ':prezto:module:ssh:load' identities 'id_ed25519' 'ona-production' 'ona-s
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
