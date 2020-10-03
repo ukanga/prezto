@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'python' \
   'node' \
+  'ruby' \
   'ssh' \
   'git' \
   'gpg' \
