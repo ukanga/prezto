@@ -26,5 +26,6 @@ alias git=hub
 
 path=(
   ~/.local/{bin,sbin}
+  ~/.krew/bin
   $path
 )
